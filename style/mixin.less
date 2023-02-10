@@ -1,0 +1,59 @@
+// 布局
+.absolute-layout() {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+// 文字
+.text-hidden() {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-break: break-all;
+	white-space: nowrap;
+}
+
+.scroll-x() {
+	overflow-x: overlay;
+	overflow-y: hidden;
+}
+
+.scroll-y() {
+	overflow-x: hidden;
+	overflow-y: overlay;
+}
+
+// 居中
+.flex-center() {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.text-center(@height: 14px) {
+	height: @height;
+	line-height: @height;
+	text-align: center;
+}
+
+// 子元素
+.absolute-center(@width: 50px, @height: 50px) {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: @width;
+	height: @height;
+	margin-top: calc(-@height / 2);
+	margin-left: calc(-@width / 2);
+}
+
+// 效果
+.transition-color() {
+	transition: color 0.3s ease;
+}
+
+.transition-css() {
+	transition: all 0.3s ease;
+}

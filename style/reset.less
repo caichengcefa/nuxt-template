@@ -1,0 +1,87 @@
+@import './var.less';
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+	padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+figure,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+/* height */
+html,
+body,
+#app,
+#root {
+	height: 100%;
+}
+
+/* Set core root defaults */
+html {
+	scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+	box-sizing: border-box;
+	// font-family: Helvetica, Tahoma, Arial, 'PingFangSC-Regular', 'Hiragino Sans GB', 'Heiti SC', 'Microsoft YaHei',
+	// 	'WenQuanYi Micro Hei';
+	font-family: Microsoft YaHei, Helvetica, Tahoma, Arial, 'PingFangSC-Regular', 'Hiragino Sans GB', 'Heiti SC',
+		'WenQuanYi Micro Hei';
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	font-size: 14px;
+	line-height: 1.4;
+	color: var(--text-color);
+	word-break: break-all;
+	-webkit-user-select: none;
+	user-select: none;
+	text-rendering: optimizeSpeed;
+	-webkit-text-size-adjust: none;
+}
+
+//滚动条
+::-webkit-scrollbar {
+	width: 5px; /* 纵向滚动条*/
+	height: 5px; /* 横向滚动条 */
+	background-color: transparent;
+}
+
+// 滚动条轨道
+::-webkit-scrollbar-track {
+	background-color: transparent;
+	border-radius: 5px;
+}
+
+// 滚动条滑块
+::-webkit-scrollbar-thumb {
+	background: transparent;
+	border-radius: 5px;
+}
+
+:hover::-webkit-scrollbar-thumb {
+	background: #d8d8d8;
+	opacity: 0.96;
+}
